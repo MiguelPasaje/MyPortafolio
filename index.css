@@ -1,0 +1,177 @@
+:root{
+    --parentesis-color:#00C2FF;
+    --name-title-color: #88ff08;
+    /* --name-title-color: #191919; */
+    --name-description-color:#c13584;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box ;
+  
+}
+body{
+    background-color: rgb(24, 24, 24);
+    
+}
+.waves{
+  margin-bottom:0px;
+  padding:0;
+}
+svg{
+  margin-bottom:0px;
+  padding:0;
+
+}
+.container{
+  margin-bottom: 0%;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  
+  
+}
+.row{
+  margin-top: 0px; 
+  padding-bottom:100px;
+  padding-left: 100px;
+
+  
+}
+.name_info{
+  letter-spacing: 2px;
+}
+/*  */
+#name_title{
+  color:var(--name-title-color);
+
+
+}
+
+#name_title span{
+    color:var(--parentesis-color);
+}
+/*  */
+
+.name_info h2{
+    color:var(--name-description-color);
+}
+.name_info span{
+    color:#00C2FF;
+}
+.redesSociales{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding:20px;
+    flex-wrap: wrap;
+
+  }
+  .redesSociales a{
+    display: block;
+    width: 60px;
+    height:60px;
+    background: black;
+    color:white;
+    margin: 20px;;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3 ease all;
+  }
+
+  .redesSociales .twiter{
+    background-color:#1da1f2;        
+  }
+
+  .redesSociales .facebook{
+    background-color:#3b5998;        
+  }
+
+  .redesSociales .instagram{
+    background-color:#c13584;        
+  }
+
+  .redesSociales a i {
+    font-size: 20px;
+    line-height: 60px;
+  }
+
+  .redesSociales .contenedor-icono:hover a {
+    animation: icono .5s ease;
+    
+  }
+
+  @keyframes icono {
+    from{
+      transform:rotate3d(0,0,0,0);
+      
+    }
+    to{
+      transform:rotate3d(1,1,1,360deg);
+    }
+    
+  }
+  /* mailTO */
+  
+  .mailTo{
+    
+    background-color:#212020;
+    /* width: 600px; */
+    padding: 30px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    font-family:'calibri';
+    color:#009fd5;
+    font-weight: bold;
+    letter-spacing: 4px;
+    box-shadow: 5px 8px 10px 0px rgba(136, 255, 8, 0.1);
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: var(--name-description-color);
+
+
+  }
+  h4{
+    font-size:24px;
+    margin-bottom:20px;
+  }
+  .inp_mailTo{
+    width: 100%;
+    background:#cdcdcd;
+    padding:10px;
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .mailTo .btn{
+    width: 20%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    padding:10px;
+    background-color: #049fd5;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+  }
+
+  #my-form-status{
+    background-color: greenyellow;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    padding: 5px;
+    
+  }
+
+  #my-form-status-error{
+    background-color: rgb(255, 47, 47);
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    
+  }
+
+
+
