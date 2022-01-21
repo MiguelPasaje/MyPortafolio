@@ -117,7 +117,7 @@ svg{
     background-color:#212020;
     /* width: 600px; */
     padding: 30px;
-    
+    min-width:300px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2px;
@@ -146,6 +146,7 @@ svg{
 
   .mailTo .btn{
     width: 20%;
+    min-width: 70px;
     margin: auto;
     color: rgb(0, 0, 0);
     padding:10px;
@@ -175,3 +176,16 @@ svg{
 
 
 
+  @media (max-width: 400px) {
+    .mailTo .btn{
+      width:100%;
+    }
+    .row{
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+    body{
+      min-width: 350px;
+    }
+   
+  }
