@@ -78,8 +78,8 @@ svg{
     transition: .3 ease all;
   }
 
-  .redesSociales .twiter{
-    background-color:#1da1f2;        
+  .redesSociales .twiter{         
+    background-color:#1D9BF0;
   }
 
   .redesSociales .facebook{
@@ -89,6 +89,15 @@ svg{
   .redesSociales .instagram{
     background-color:#c13584;        
   }
+  
+  .redesSociales .gitHub{
+    background-color:#2b3139;        
+  }
+ 
+  .redesSociales .linkedin{
+    background-color: #0A66C2;        
+  }
+
 
   .redesSociales a i {
     font-size: 20px;
