@@ -151,7 +151,7 @@ svg{
   .icon-message{
     position:absolute;
     right: 0;
-    
+
   }
   .inp_mailTo{
     width: 100%;
@@ -162,17 +162,50 @@ svg{
   }
 
   .mailTo .btn{
-    width: 20%;
+   /*  width: 20%;
     min-width: 70px;
     margin: auto;
     color: rgb(0, 0, 0);
     padding:10px;
     background-color: #049fd5;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 4px; */
+    padding: 0.8em 1.8em;
+    border: 2px solid #049fd5;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #049fd5;
 
   }
-
+  .btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #049fd5;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .btn:hover::before {
+    width: 105%;
+   }
+   
+   .btn:hover {
+    color: #111;
+   }
+/*  */
   #my-form-status{
     background-color: greenyellow;
     text-align: center;
@@ -207,3 +240,11 @@ svg{
    
   }
 
+
+  /* From cssbuttons.io by @nikk7007 */
+/* button {
+  
+ } */
+ 
+ 
+ 
