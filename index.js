@@ -1,4 +1,55 @@
+/* validacion */
+const formulario = document.getElementById('my-form');
+const inputs = document.querySelectorAll('#my-form input');
+const expresiones = {
+	//usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	//password: /^.{4,12}$/, // 4 a 12 digitos.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	//telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 
+}
+
+const btnForm = document.querySelector('.btn');
+
+const validarForm = (e)=>{
+   console.log(e.target.name)
+   switch (e.target.name){
+     case "name":
+      if(expresiones.nombre.test(e.target.value)){
+        document.querySelector("#validarInputName").innerHTML=""
+        btnForm.disabled = false;
+      }else{
+        document.querySelector('#validarInputName').innerHTML= "Error, hay símbolos y el tamaño debe ser menor a 40 "
+        btnForm.disabled = true;
+      }
+    break;
+    case "email":
+      if(expresiones.correo.test(e.target.value)){
+        document.querySelector("#validarInputEmail").innerHTML=""
+        btnForm.disabled = false;
+
+      }else{
+        document.querySelector('#validarInputEmail').innerHTML= "Error, e-mail incorrecto"
+        btnForm.disabled = true;
+
+      }
+      
+    break;
+   }
+}
+
+inputs.forEach((input)=>{
+  input.addEventListener('keyup',validarForm);
+  input.addEventListener('blur',validarForm);
+
+
+
+});
+
+/* formulario.addEventListener("my-form-button", ()=>{
+
+} ); */
 
 var mensaje = document.getElementById("my-form-status");
 mensaje.style.display = "none";
@@ -27,3 +78,4 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+

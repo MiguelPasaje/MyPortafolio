@@ -245,6 +245,11 @@ svg{
 /* button {
   
  } */
+ .validarInputName{
+   color: red;
+ }
  
- 
+ .validarInputEmail{
+  color: red;
+}
  
