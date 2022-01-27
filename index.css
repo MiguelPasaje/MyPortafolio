@@ -3,6 +3,7 @@
     --name-title-color: #88ff08;
     /* --name-title-color: #191919; */
     --name-description-color:#c13584;
+    
 }
 *{
   margin:0;
@@ -80,6 +81,7 @@ svg{
 
   .redesSociales .twiter{         
     background-color:#1D9BF0;
+
   }
 
   .redesSociales .facebook{
@@ -141,9 +143,15 @@ svg{
 
 
   }
-  h4{
+  .mailTo h4{
     font-size:24px;
-    margin-bottom:20px;
+    margin-bottom:20px;    
+    position:relative;
+  }
+  .icon-message{
+    position:absolute;
+    right: 0;
+    
   }
   .inp_mailTo{
     width: 100%;
@@ -198,3 +206,4 @@ svg{
     }
    
   }
+
