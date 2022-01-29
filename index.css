@@ -140,6 +140,7 @@ svg{
     border-top: 1px;
     border-top-style: solid;
     border-top-color: var(--name-description-color);
+    
 
 
   }
@@ -159,6 +160,9 @@ svg{
     padding:10px;
     margin-bottom: 10px;
     border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 1px; 
   }
 
   .mailTo .btn{
@@ -168,8 +172,8 @@ svg{
     color: rgb(0, 0, 0);
     padding:10px;
     background-color: #049fd5;
-    font-weight: bold;
-    letter-spacing: 4px; */
+    font-weight: bold; */
+    letter-spacing: 3px; 
     padding: 0.8em 1.8em;
     border: 2px solid #049fd5;
     position: relative;
@@ -182,6 +186,8 @@ svg{
     z-index: 1;
     font-family: inherit;
     color: #049fd5;
+    font-weight: bold;
+
 
   }
   .btn::before {
