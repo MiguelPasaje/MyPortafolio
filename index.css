@@ -309,6 +309,9 @@ section .container{
 .card h6{
     color: var(--name-description-color)
 }
+.card__about p{
+  color:#fff;
+}
 .num__random{
     color: var(--name-title-color);
 }
