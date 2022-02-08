@@ -125,7 +125,9 @@ svg{
   
   .mailTo{
     
-    background-color:#212020;
+    background-color:rgba(80, 80, 80, 0.18);
+    /* background-color:#212020; */
+
     /* width: 600px; */
     padding: 30px;
     min-width:300px;
@@ -325,7 +327,7 @@ section .container{
     height: 400px;
     width: 400px;
     border-radius:50%;
-    background-color: rgba(255, 255, 255, 0.150);
+    background-color: rgba(255, 255, 255, 0.09);
     filter:brightness(70%) blur(20px);
     top:-13%;
     left:-20%;
