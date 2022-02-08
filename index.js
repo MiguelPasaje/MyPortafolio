@@ -22,7 +22,7 @@ btnForm.disabled = true;
 
 
 const validarForm = (e) => {
-  
+
   switch (e.target.name) {
     case "name":
       if (expresiones.nombre.test(e.target.value)) {
@@ -53,9 +53,9 @@ const validarForm = (e) => {
 
       break;
   }
-  if(campos.nombre && campos.correo){
+  if (campos.nombre && campos.correo) {
     btnForm.disabled = false;
-  }else{
+  } else {
     btnForm.disabled = true;
   }
 }
@@ -116,3 +116,6 @@ async function handleSubmit2(event) {
   mensajeError.style.display = "block";
 
 }
+
+
+
