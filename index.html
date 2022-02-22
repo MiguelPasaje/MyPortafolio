@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="preloader/estilo.css">
     <title>Miguel Andres Pasaje Urbano</title>
 
     <style>
@@ -24,7 +25,16 @@
       }
     </style>
   </head>
-  <body>
+  <body class="hidden">
+    <!-- preloader -->
+    <div class="preloader" id="preloader">
+      <h2 class="lds-roller">
+        Miguel Pasaje <br />
+        <span>loading . . .</span>
+      </h2>
+    </div>
+    <!-- end preloader -->
+
     <div class="waves">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 170">
         <path
@@ -69,25 +79,24 @@
 
         <section class="about_me">
           <div class="container">
-              <div class="cardWrapper">
-                  <div class="card">
-                      <div class="card__name">
-                          <p>About Me!</p>
-                      </div>
-                      <div class="card__name">
-                      
-                      <h6>Hi, I'am Miguel Pasaje!</h6>
-                    </div>
-                      <div class="card__about">
-                        <p >
-                            I'm a Systems Enginner based in Pasto - Colombia,
-                            I love building and designing, websites high-quality.
-                        </p>
-                      </div>
-                      <div class="num__random">1234--</div>
-                      <div class="highlight"></div>
-                  </div>
+            <div class="cardWrapper">
+              <div class="card">
+                <div class="card__name">
+                  <p>About Me!</p>
+                </div>
+                <div class="card__name">
+                  <h6>Hi, I'am Miguel Pasaje!</h6>
+                </div>
+                <div class="card__about">
+                  <p>
+                    I'm a Systems Enginner based in Pasto - Colombia, I love
+                    building and designing, websites high-quality.
+                  </p>
+                </div>
+                <div class="num__random">1234--</div>
+                <div class="highlight"></div>
               </div>
+            </div>
           </div>
         </section>
 
@@ -187,11 +196,15 @@
     >
       <p>&copy; 2021 miguelandrespasaje</p>
     </footer>
-<!-- scripts -->
+    <!-- scripts -->
     <script src="index.js"></script>
     <script src="card.js"></script>
 
-    <script src="https://kit.fontawesome.com/5f9c3bf3c5.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/5f9c3bf3c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="preloader/preloader.js"></script>
   </body>
 </html>

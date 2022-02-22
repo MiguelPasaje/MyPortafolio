@@ -14,7 +14,7 @@ cardWrapper.addEventListener('mousemove', (e)=>{
 
     const x = e.offsetX;
     const y = e.offsetY;
-    console.log(x," - ", y)
+    //console.log(x," - ", y)
 
     const {width, height} = cardWrapper.getBoundingClientRect();
     const halfWidth = width / 2;

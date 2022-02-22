@@ -1,0 +1,40 @@
+.hidden{
+    overflow: hidden;
+}
+
+.preloader{
+    margin:0;
+    height:100vh;
+    display: grid;
+    place-items: center ;
+    background:#000;
+}
+.lds-roller{
+    letter-spacing:2px;
+    font-family:Impact;
+    /* background-image: linear-gradient(90deg,#000,#ffe134,#000); */
+    background-image: linear-gradient(90deg,#000,#34f1ff,#000);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    color:transparent;
+    text-transform:uppercase;
+    animation:shine 4s linear infinite;
+    display: grid;
+    place-items:center;
+
+}
+.lds-roller span{
+    
+    font-size: 15px;
+    padding-top: 5px;
+    letter-spacing:3px;
+}
+@keyframes shine{
+    from{
+        background-position: -500% 0;
+    }
+    to{
+        background-position:500% 0;
+    }
+}
