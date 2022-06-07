@@ -1,0 +1,57 @@
+
+  body {
+    /* The background-color of the scrollbar cannot be transitioned.
+       To work around this, we set and transition the property
+       of the wrapper and just set the scrollbar to inherit its
+       value. Now, when the the wrapper transitions that property,
+       so does the scrollbar. However, if we set a background-color,
+       this color shows up in the wrapper as well as the scrollbar.
+       Solution: we transition the border-color and add a border-right
+       to the scrollbar that is as large as the viewport. */
+    border-color: rgba(255, 255, 255, 0);
+    transition: border-color 0.75s linear;
+    /* make this element do the scrolling */
+    overflow: auto;
+  }
+  
+  body:hover {
+    border-color: rgba(34, 34, 34);
+    transition: border-color 0.125s linear;
+  }
+  
+  body::-webkit-scrollbar,
+  body::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-corner {
+    /* add border to act as background-color */
+    border-right-style: inset;
+    /* sum viewport dimensions to guarantee border will fill scrollbar */
+    border-right-width: calc(100vw + 100vh);
+    /* inherit border-color to inherit transitions */
+    border-color: inherit;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 1rem;
+    height: 0.5rem;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-color: rgba(193,59,132,0.22);
+    border-radius:10px;
+    /* uncomment this to hide the thumb when not hovered */
+    /* border-color: inherit; */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    border-color: rgba(0, 194, 255, 0.5);
+  }
+  
+  body::-webkit-scrollbar-thumb:active {
+    border-color: rgba(136, 255, 8, 0.3);
+  }
+
+  /* Track */
+::-webkit-scrollbar-track:active {
+    box-shadow: inset 0 0 5px #88ff0846; 
+    border-radius: 10px;
+  }
