@@ -9,9 +9,13 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="preloader/estilo.css">
-    <link rel="stylesheet" href="scrollBar/scrollBar.css" >
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/experience.css" />
+
+    <link rel="stylesheet" href="preloader/estilo.css" />
+    <link rel="stylesheet" href="styles/scrollBar/scrollBar.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link rel="stylesheet" href="styles/cardsResplandor.css" />
     <title>Miguel Andres Pasaje Urbano</title>
 
     <style>
@@ -27,6 +31,19 @@
     </style>
   </head>
   <body class="hidden">
+    <div class="burbujascontainer">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <!--       <div class="burbuja"></div>
+      <div class="burbuja"></div> -->
+    </div>
+
     <!-- preloader -->
     <div class="preloader" id="preloader">
       <h2 class="lds-roller">
@@ -100,6 +117,118 @@
             </div>
           </div>
         </section>
+
+        <!-- works -->
+
+        <!--  -->
+        <div class="experienceTitle">
+          <h1>Works!</h1>
+        </div>
+        <div class="cardWorks">
+          <div class="containerCard">
+            <div class="box">
+              <span> </span>
+              <div class="content">
+                <h2>Laravel</h2>
+                <p>
+                  Application using laravel for the handling of law 842 of 2003
+                  of Colombia.
+                </p>
+                <a href="https://github.com/MiguelPasaje/proyectoCopnia/tree/master" target="_blank"> Read More </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="box">
+              <span> </span>
+              <div class="content">
+                <h2>Angular NodeJs</h2>
+                <p>Web Store app using Angular and NodeJs.</p>
+                <a href="https://github.com/MiguelPasaje/AngularProyect"target="_blank"> Read More </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="box">
+              <span> </span>
+              <div class="content">
+                <h2>Phaser</h2>
+                <p>A game using the Phaser Javascript library.</p>
+                <a href="https://miguelpasaje.github.io/JuegoPhaser/" target="_blank"> Read More </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end works  -->
+
+
+        <!-- experience -->
+        <section class="experience">
+          <div class="experienceTitle">
+            <h1>Experience!</h1>
+          </div>
+
+          <div class="icons-experience">
+            <div class="content-icon">
+              <i class="fab fa-js fa-fw icon-lang" id="tooltip"></i>
+              <span class="tooltip-box">javaScript</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-java fa-fw icon-lang" id="tooltip"></i>
+              <span class="tooltip-box">Java</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-laravel fa-fw icon-lang" id="tooltip"></i>
+              <span class="tooltip-box">Laravel</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-python fa-fw icon-lang" id="tooltip"></i>
+              <span class="tooltip-box">Python</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-php fa-fw icon-lang" id="tooltip"></i>
+              <span class="tooltip-box">PHP</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-git-square fa-fw" id="tooltip"></i>
+              <span class="tooltip-box">Git</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-linux fa-fw" id="tooltip"></i>
+              <span class="tooltip-box">Linux</span>
+            </div>
+            <div class="content-icon">
+              <i class="fas fa-database fa-fw" id="tooltip"></i>
+              <span class="tooltip-box">Sql</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-angular fa-fw" id="tooltip"></i>
+              <span class="tooltip-box">Angular</span>
+            </div>
+            <div class="content-icon">
+              <i class="fab fa-node-js fa-fw" id="tooltip"></i>
+              <span class="tooltip-box">NodeJs</span>
+            </div>
+          </div>
+
+          <!-- <div class="cardsExperience">
+            <div class="card">
+              <a href="">javaScript </a>
+            </div>
+            <div class="card">
+              <a href="">Java </a>
+            </div>
+            <div class="card">
+              <a href="">Laravel </a>
+            </div>
+            <div class="card">
+              <a href="">Python </a>
+            </div>
+            <div class="card">
+              <a href="">Php </a>
+            </div>
+          </div> -->
+        </section>
+
+        <!-- EndExperience -->
 
         <!-- mailTo -->
         <section class="mailTo">
@@ -197,6 +326,7 @@
     >
       <p>&copy; 2021 miguelandrespasaje</p>
     </footer>
+
     <!-- scripts -->
     <script src="index.js"></script>
     <script src="card.js"></script>

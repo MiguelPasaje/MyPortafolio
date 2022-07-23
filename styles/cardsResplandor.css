@@ -1,0 +1,137 @@
+.cardWorks{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 10px;
+    /* min-height:100vh; */
+    /* background:#111; */
+
+    
+}
+.containerCard{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 0;
+    flex-wrap: wrap;
+    
+
+    
+}
+.containerCard .box{
+    position:relative;
+    width:320px;
+    height: 200px;
+    color:#fff;
+    background:#111;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 20px 30px;
+    transition:0.5s;
+
+    
+
+}
+
+.containerCard .box:hover{
+    transform:translateY(-20px);
+    
+
+
+    
+}
+
+.containerCard .box::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background:linear-gradient(45deg,#ffbc00,#ff0058);
+    
+
+    
+}
+.containerCard .box::after{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background:linear-gradient(45deg,#ffbc00,#ff0058);
+    filter:blur(30px);
+
+
+}
+.containerCard .box:nth-child(2)::before,
+.containerCard .box:nth-child(2)::after
+{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.containerCard .box:nth-child(3)::before,
+.containerCard .box:nth-child(3)::after
+{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.containerCard .box span{
+    position:absolute;
+    top:6px;
+    left:6px;
+    right:6px;
+    bottom:6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    border-radius:5px;
+
+    
+}
+.containerCard .box span::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+
+}
+.containerCard .box .content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+    
+    
+
+}
+.containerCard .box .content h2{
+    font-size: 1.1em;
+    color:#fff;
+    margin-bottom:10px;
+}
+.containerCard .box .content p{
+    font-size: 1.1em;
+    color:#fff;
+    margin-bottom:10px;
+    line-height: 1.4em;;
+}
+.containerCard .box .content a{
+    display:inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:whitesmoke;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.containerCard .box .content a:hover{
+    color:rgb(175, 175, 175);
+}
+
+
